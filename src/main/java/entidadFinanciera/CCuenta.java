@@ -5,6 +5,13 @@
 
 package entidadFinanciera;
 
+/**
+ * Esto es un comentario que inserta Valeria en Javadoc para comenzar
+ * @author Valeria
+ * @version 2.0
+ * @since 1.5
+ * @see https://aulasfp2324.castillalamancha.es/mod/assign/view.php?id=93166
+*/
 
 public class CCuenta {
 
@@ -76,7 +83,11 @@ public class CCuenta {
             throw new Exception("No se puede ingresar una cantidad negativa");
         saldo = saldo + cantidad;
     }
-
+    /**
+     * Lanza un mensaje que dice que no hay suficiente saldo cuando no hay suficiente saldo o que no se puede retirar una cantidad negativa
+    @exception "No se hay suficiente saldo"
+    * @exception "No se puede ingresar una cantidad negativa"
+    **/
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)

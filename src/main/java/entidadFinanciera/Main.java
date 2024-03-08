@@ -27,6 +27,12 @@ public class Main {
         probarRetirar(objetoCuenta, saldoActual-5);
     }
 
+    /**
+     * Esta clase está presente desde el 05/03/2024
+     * @since 05/03/2024
+     * @param objetoCuenta es la cuenta que se pasa como parametro
+     * @param cantidadEsperada es la cantidad que se espera que devuelva la prueba
+ */
     public static void probarRetirar(CCuenta objetoCuenta, double cantidadEsperada) {
         try {
             objetoCuenta.retirar(5);
